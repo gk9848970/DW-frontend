@@ -1,13 +1,9 @@
-import imgone from 'C:/Users/hp/design3-RC/src/images/si1.jpg'
-import imgtwo from '../../images/im2.jpg'
-import imgthree from '../../images/im3.jpg'
-
 export const SData = [
     {
         title: 'Title Goes Here',
         subhead: 'SuBheading goes here',
         path: '/',
-        image: imgone,
+        image: '',
         alt: 'image',
         label: 'button'
     },
@@ -15,7 +11,7 @@ export const SData = [
         title: 'Title Goes Here',
         subhead: 'SuBheading goes here',
         path: '/',
-        image: imgthree,
+        image: '',
         alt: 'imag',
         label: 'button'
     },
@@ -23,7 +19,7 @@ export const SData = [
         title: 'Title Goes Here',
         subhead: 'SuBheading goes here',
         path: '/',
-        image: imgtwo,
+        image: '',
         alt: 'img',
         label: 'button'
     },
