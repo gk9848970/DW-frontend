@@ -20,17 +20,17 @@ const Features = () => {
 			<Container>
 				<FeatureTextWrapper>
 					<FeatureTitle
-					style={{color: ColorData.textDark}}
-					>Features</FeatureTitle>
+					style={{color: ColorData.textLight}}
+					>{FeatureData.title}</FeatureTitle>
 				</FeatureTextWrapper>
 				<FeatureWrapper>
-					{FeatureData.map((el, index) => (
+					{FeatureData.blocks.map((el, index) => (
 						<FeatureColumn key={index}>
 							<FeatureImageWrapper className={el.imgClass}>
 								<img src={el.icon} alt=""/>
 							</FeatureImageWrapper>
 							<FeatureName
-							style={{color: ColorData.textDark}}
+							style={{color: ColorData.textLight}}
 							>{el.name}</FeatureName>
 							<FeatureText
 							style={{color: ColorData.textDark}}

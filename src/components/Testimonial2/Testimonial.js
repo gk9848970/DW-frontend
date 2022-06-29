@@ -21,7 +21,7 @@ const Testimonial = () => {
 				<PricingWrapper>
 					<PricingHeading
 					style={{ color: ColorData.textDark}}
-					>Testimonial Heading</PricingHeading>
+					>{Tdata.title}</PricingHeading>
 					<TextWrapper
 						style={{ color: ColorData.textDark}}
 						maxWidth="460px"
@@ -31,10 +31,10 @@ const Testimonial = () => {
 						align="center"
 						weight="600"
 					>
-						Testimonial Discription
+						{Tdata.description}
 					</TextWrapper>
 					<PricingContainer>
-						{Tdata.map((card, index) => (
+						{Tdata.blocks.map((card, index) => (
 								<PricingCardInfo key={index}>
 									<PricingCardPlan
 									style={{ color: ColorData.textLight}}

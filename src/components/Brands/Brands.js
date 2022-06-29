@@ -21,15 +21,15 @@ const Clients = () => {
 			<Container>
 				<ClientTextWrapper>
 					<ClientTitle
-					style={{color: ColorData.textDark}}
-					>Our Clients / partners</ClientTitle>
+					style={{color: ColorData.textLight}}
+					>{BrandData.title}</ClientTitle>
 					<ClientText
-					style={{color: ColorData.textDark}}
-					>Discription</ClientText>
+					style={{color: ColorData.textLight}}
+					>{BrandData.description}</ClientText>
 				</ClientTextWrapper>
 
 				<ClientRow>
-					{BrandData.map((clients, clientsIndex) => (
+					{BrandData.imageGrid.map((clients, clientsIndex) => (
 						<ClientColumn key={clientsIndex}>
 							{clients.map((el, index) => (
 								<ClientWrapper key={index}>

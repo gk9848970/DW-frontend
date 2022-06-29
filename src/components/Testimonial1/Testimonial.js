@@ -14,11 +14,11 @@ const Testimonial = () => {
 		<Section margin="auto" padding="50px 250px" inverse style = {{background: ColorData.tertiaryTwo}}>
 			<Row justify="space-around" margin="0.2rem" wrap="wrap">
 				<Heading width="auto" margin ='0 0 1rem 0' inverse style = {{color: ColorData.textDark}}>
-					Testimonial
+					{Tdata.title}
 				</Heading>
 			</Row>
 			<ReviewSlider {...sliderSettings} ref={setSliderRef}>
-				{Tdata.map((el, index) => (
+				{Tdata.blocks.map((el, index) => (
 					<ImageWrapper key={index}>
 						<CarouselImage src={el.imgURL} />
 						<TextWrapper size="1.1rem" margin="0.7rem 0 0" weight="bold" style = {{color: ColorData.textDark}}>

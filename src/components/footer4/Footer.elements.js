@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { ColorData } from '../../App2';
 import { Column, Row } from '../../globalStyles';
 
 export const FooterSection = styled.div`
 	color: #fff;
 	padding: 60px;
-	background: #262673;
+	background:  ${() => ColorData.tertiaryOne};;
 	@media screen and (max-width: 720px) {
 		padding: 20px;
 	}
@@ -43,18 +44,22 @@ export const Link = styled.a`
 	padding-bottom: 3px;
 	&:hover {
 		color: white;
-		border-bottom: 1px solid #dcdcdc;
+		border-bottom: 1px solid  ${() => ColorData.tertiaryTwo};;
 		transition: border 0.5s ease-out;
 	}
 `;
 
 export const FooterSocialIcon = styled.a`
-	color: #fff;
+	color:  ${() => ColorData.textLight};
 	font-size: 20px;
+	&:hover {
+		color: ${() => ColorData.tertiaryTwo};
+		transition: 0.3s ease-out;
+	}
 `;
 
 export const WebsiteRights = styled.div`
-	color: #fff;
+	color: ${() => ColorData.textLight};;
 	margin-bottom: 5px;
 	margin-top: 20px;
 	text-align: center;

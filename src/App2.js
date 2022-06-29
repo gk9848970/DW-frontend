@@ -50,17 +50,17 @@ export function App() {
         setCarouselType(res.data.carousel.carouselType);
         setFeatureType(res.data.feature.featureType);
         NSText = res.data.navbar.navbarData.searchText;
-        BrandData = res.data.brand.brandData.imageGrid;
+        BrandData = res.data.brand.brandData;
         Ndata = res.data.navbar.navbarData.links;
         Navlogo = res.data.navbar.navbarData.logoImgURL;
         Navbuttom = res.data.navbar.navbarData.button;
         HeadData = res.data.header.headerData.blocks;
-        Tdata = res.data.testimonial.testimonialData.blocks;
+        Tdata = res.data.testimonial.testimonialData;
         Cdata = res.data.carousel.carouselData;
         FormData = res.data.form.formData;
         FootData = res.data.footer.footerData;
         FootSicon = res.data.footer.footerData.socialLinks;
-        FeatureData = res.data.feature.featureData.blocks;
+        FeatureData = res.data.feature.featureData;
         ColorData = res.data.colors;
     
         const reactIconName = {

@@ -28,11 +28,11 @@ const Features = () => {
 			<Container>
 				<FeatureTextWrapper>
 					<FeatureTitle
-						style={{color: ColorData.textDark}}
-					>Features</FeatureTitle>
+						style={{color: ColorData.textLight}}
+					>{FeatureData.title}</FeatureTitle>
 				</FeatureTextWrapper>
 				<FeatureWrapper>
-					{FeatureData.map((el, index) => (
+					{FeatureData.blocks.map((el, index) => (
 						<FeatureColumn
 							initial={initial}
 							animate={animate}

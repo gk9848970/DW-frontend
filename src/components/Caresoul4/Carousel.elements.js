@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
 	.title {
-	  margin-top: 40px;
+	  padding-top: 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -15,8 +15,8 @@ export const Section = styled.section`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     .product {
       display: flex;
       flex-direction: column;

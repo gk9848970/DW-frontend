@@ -11,11 +11,11 @@ const Testimonial = () => {
           <h1>
             <span
             style={{ color: ColorData.textDark}}
-            >Testimonial</span>
+            >{Tdata.title}</span>
           </h1>
         </div>
         <div className="testimonials">
-		{Tdata.map((el, index) => (
+		{Tdata.blocks.map((el, index) => (
           <div className="testimonial" key={index}>
             <div className="image">
               <img src= {el.imgURL} alt = "" />	 

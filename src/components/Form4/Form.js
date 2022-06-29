@@ -10,7 +10,7 @@ const Contact = () => {
       <Title
       style={{color: ColorData.textLight}}	
       >{FormData.title}</Title>
-      <Form>
+      <Form style={{maxWidth: "100%" , padding: "8px"}}>
         <Row>
           <input name="name" type="text" placeholder="your name" />
           <input
@@ -22,7 +22,8 @@ const Contact = () => {
         <Row>
           {FormData.blocks.map((el, index) => (
           <div key={index}>
-             <input name={el.value} type={el.type} placeholder={el.placeholderText}  style={{ width: '445px' }} />
+             <input name={el.value} type={el.type} placeholder={el.placeholderText}  
+             style={{ width: '445px',maxWidth: "100%" }} />
           </div>
           ))}
         </Row>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Text } from '../../globalStyles';
 import { FooterColumn, FooterRow, FooterSection, IconRow, Link , FooterSocialIcon,WebsiteRights} from './Footer.elements';
-import { FootData,typeOfDataNeeded } from '../../App2'
+import { ColorData, FootData,typeOfDataNeeded } from '../../App2'
 
 const Footer = () => {
 	
@@ -10,10 +10,14 @@ const Footer = () => {
 			<Container>
 				<FooterRow>
 					<FooterColumn>
-						<Text weight="700" size="1.5rem">
+						<Text weight="700" size="1.5rem"
+						style={{color: ColorData.textLight}}
+						>
 							{FootData.heading}
 						</Text>
-						<Text maxWidth="360px" size="0.9rem"  margin = '10px'>
+						<Text maxWidth="360px" size="0.9rem"  margin = '10px'
+						style={{color: ColorData.textLight}}
+						>
 							{FootData.subHeading}
 						</Text>
 						<IconRow>
@@ -30,7 +34,9 @@ const Footer = () => {
 					</FooterColumn>
 					{FootData.blocks.map((el, index) => (
 						<FooterColumn key={index} md={2} sm={4}>
-							<Text weight="700" mb="0.3rem" size="1.5rem">
+							<Text weight="700" mb="0.3rem" size="1.5rem"
+							style={{color: ColorData.textLight}}
+							>
 								{el.heading}
 							</Text>
 
@@ -38,6 +44,7 @@ const Footer = () => {
 								<Text margin = '5px' fontSize="0.9rem" key={ind}>
 									<Link 
 									onClick={() => window.location.href=`https://${link.linkURL}`}
+									style={{color: ColorData.textLight}}
 									>{link.text}</Link>
 								</Text>
 							))}

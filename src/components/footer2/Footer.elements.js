@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ColorData } from '../../App2';
 // import { Link } from 'react-router-dom';
 import { Column, Row ,TextWrapper } from '../../globalStyles';
 
@@ -32,8 +33,12 @@ export const SocialIcon = styled.img`
 `;
 
 export const FooterSocialIcon = styled.a`
-	color: #fff;
+	color: ${() => ColorData.textLight};
 	font-size: 20px;
+	&:hover {
+		color: ${() => ColorData.tertiaryTwo};
+		transition: 0.3s ease-out;
+	}
 `;
 
 export const FooterForm = styled.form`
@@ -89,12 +94,12 @@ export const WebsiteRights = styled.small`
 	margin-bottom: 16px;
 `;
 export const FooterLink = styled(TextWrapper)`
-	color: #fff;
+	color:  ${() => ColorData.textLight};
 	text-decoration: none;
 	margin-bottom: .3rem;
 	cursor: pointer;
 	&:hover {
-		color: purple;
+		color: ${() => ColorData.tertiaryTwo};
 		transition: 0.3s ease-out;
 	}
 	@media screen and (max-width: 966px){
@@ -104,6 +109,7 @@ export const FooterLink = styled(TextWrapper)`
 `;
 
 export const FooterLinkTitle = styled.h2`
+	color:  ${() => ColorData.textLight};
 	margin-bottom: 14px;
 	font-size: 25px;
 	@media screen and (max-width: 966px){

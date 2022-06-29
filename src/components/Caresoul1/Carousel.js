@@ -10,7 +10,12 @@ const Carousel = () => {
 	const [sliderRef, setSliderRef] = useState(null);
 
 	return (
-		<Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse>
+		<div
+		style={{background: ColorData.secondary}}
+		>
+		<Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse
+		style={{background: ColorData.secondary}}
+		>
 			<Row justify="space-between" margin="1rem" wrap="wrap">
 				<Heading width="auto" margin ='0 0 1rem 0' inverse
 				style={{color: ColorData.textDark}}	
@@ -43,6 +48,7 @@ const Carousel = () => {
 				))}
 			</ReviewSlider>
 		</Section>
+		</div>
 	);
 };
 

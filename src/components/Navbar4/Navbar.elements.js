@@ -6,8 +6,8 @@ import { ColorData } from '../../App2';
 
 export const Nav = styled.nav`
 	background: ${({ background }) => (background ? ColorData.primary : 'transparent')};
-	margin-bottom: 0;
-	height: 80px;
+	margin-bottom: -70px;
+	height: 70px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

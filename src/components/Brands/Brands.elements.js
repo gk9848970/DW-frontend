@@ -7,7 +7,6 @@ export const ClientSection = styled.div`
 	margin: 0 auto;
 	@media screen and (max-width: 768px) {
 		padding: 70px 0;
-		margin-top: 10rem;
 	}
 `;
 

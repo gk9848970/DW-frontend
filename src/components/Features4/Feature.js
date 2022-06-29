@@ -13,9 +13,9 @@ const Features = () => {
 					<Heading mb="1rem" inverse
 					style={{ color: ColorData.textLight}}
 					>
-						Features
+						{FeatureData.title}
 					</Heading>
-					{FeatureData.map((el, index) => (
+					{FeatureData.blocks.map((el, index) => (
 						<Feature key={index} md={3} sm={10}>
 							<Text inverse weight="700" size="1.3rem"
 							style={{ color: ColorData.textLight}}

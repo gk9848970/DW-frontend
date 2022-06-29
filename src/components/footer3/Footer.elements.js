@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ColorData } from '../../App2';
 // import { Link } from 'react-router-dom';
 import { Column, Row ,TextWrapper } from '../../globalStyles';
 
@@ -32,8 +33,12 @@ export const SocialIcon = styled.img`
 `;
 
 export const FooterSocialIcon = styled.a`
-	color: #fff;
+	color: ${() => ColorData.textLight};
 	font-size: 20px;
+	&:hover {
+		color: ${() => ColorData.tertiaryTwo};
+		transition: 0.3s ease-out;
+	}
 `;
 
 export const FooterForm = styled.form`
@@ -56,7 +61,7 @@ export const FooterInput = styled.input`
 	font-size: 16px;
 	border: 1px solid #fff;
 	&::placeholder {
-		color: #242424;
+		color: ${() => ColorData.tertiaryOne};;
 	}
 	@media screen and (max-width: 820px) {
 		width: 100%;
@@ -90,12 +95,12 @@ export const WebsiteRights = styled.small`
 	margin-bottom: 16px;
 `;
 export const FooterLink = styled(TextWrapper)`
-	color: #fff;
+	color:  ${() => ColorData.textLight};
 	text-decoration: none;
 	margin-bottom: .3rem;
 	cursor: pointer;
 	&:hover {
-		color: #6666ff;
+		color:  ${() => ColorData.tertiaryTwo};
 		transition: 0.3s ease-out;
 	}
 	@media screen and (max-width: 966px){
@@ -107,6 +112,7 @@ export const FooterLink = styled(TextWrapper)`
 export const FooterLinkTitle = styled.h2`
 	margin-bottom: 14px;
 	font-size: 25px;
+	color: ${() => ColorData.textLight};
 	@media screen and (max-width: 966px){
 		font-size: 28px;
 		margin-bottom: 6px;
@@ -116,7 +122,7 @@ export const FooterLinkTitle = styled.h2`
 export const Button = styled.button`
 	margin-top: 0px;
 	width: 130px;
-	color: #ef4b6c; 
+	color: ${() => ColorData.textDark};; 
 	cursor: pointer;
 	height: 40px;
 	font-size: 16px;

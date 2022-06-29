@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { IoArrowForward, IoArrowBack} from 'react-icons/io5'
 
 export const HeroSection = styled.section`
-	margin-top: -50px;
+	margin-top: 0px;
 	height: 100vh;
 	max-height: 1100px;
 	position: relative;

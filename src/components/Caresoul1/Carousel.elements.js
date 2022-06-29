@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import { Row } from '../../globalStyles';
+import { ColorData } from '../../App2';
 
 export const CarouselImage = styled.img`
 	width: 300px;
@@ -13,6 +14,7 @@ export const CarouselImage = styled.img`
 `;
 
 export const ImageWrapper = styled.div`
+	background: ${() => ColorData.textLight};
 	width: 90%;
 	display: flex !important;
 	justify-content: center;

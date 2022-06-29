@@ -9,9 +9,9 @@ const Feature = () => {
         <ServicesContainer id="services"> 
             <ServicesH1
             style={{ color : ColorData.textLight}}
-            >Our Features</ServicesH1>
+            >{FeatureData.title}</ServicesH1>
             <ServicesWrapper> 
-                {FeatureData.map((el,index) => (
+                {FeatureData.blocks.map((el,index) => (
                   <ServicesCard key={index}>
                   <ServicesIcon src={el.imgURL}/>
                   <ServicesH2

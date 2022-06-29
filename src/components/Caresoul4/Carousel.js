@@ -4,6 +4,9 @@ import { Section } from "./Carousel.elements";
 
 export default function Products() {
   return (
+    <div
+    style={{background: ColorData.secondary}}
+    >
     <Section id="products"
     >
       <div className="title">
@@ -35,6 +38,7 @@ export default function Products() {
         ))}
       </div>
     </Section>
+    </div>
   );
 }
 

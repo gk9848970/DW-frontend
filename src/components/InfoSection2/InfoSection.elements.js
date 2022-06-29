@@ -4,6 +4,7 @@ import { ColorData } from '../../App2';
 
 export const HeroSection = styled(Section)`
 	height: 100vh;
+	margin-top: 0px;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;

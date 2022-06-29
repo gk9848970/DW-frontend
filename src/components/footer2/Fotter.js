@@ -13,16 +13,22 @@ import {
 	FooterLink,
 	FooterLinkTitle
 } from './Footer.elements';
-import { FootData, typeOfDataNeeded } from "../../App2"
+import { ColorData, FootData, typeOfDataNeeded } from "../../App2"
 
 function Footer() {
 	return (
-		<Section padding="4rem 0 2rem" style={{background: "darkorange"}}>
+		<Section padding="4rem 0 2rem"
+		style={{background: ColorData.tertiaryOne}}
+		>
 			<Column justify="center" align="center" textAlign="center" mb="1.2rem" padding="1.2rem" >
-				<TextWrapper size="1.7rem" weight="500" mb="1.2rem" style={{color: "black"}}>
+				<TextWrapper size="1.7rem" weight="500" mb="1.2rem" 
+				style={{color: ColorData.textLight}}
+				>
 					{FootData.heading}
 				</TextWrapper>
-				<TextWrapper mb="1rem" spacing="1px" style={{color: "black"}}>
+				<TextWrapper mb="1rem" spacing="1px" 
+				style={{color: ColorData.textLight}}
+				>
 					{FootData.subHeading}
 				</TextWrapper>
 				<FooterForm>
@@ -33,14 +39,11 @@ function Footer() {
 			<FooterRow>
 				{FootData.blocks.map((el, index) => (
 					<FooterColumn gap="0.5rem" key={index}>
-						<FooterLinkTitle
-							style={{color: "white"}}
-						>
+						<FooterLinkTitle>
 							{el.heading}
 						</FooterLinkTitle>
 						{el.links.map((link, linkIndex) => (
 							<FooterLink key={linkIndex}
-							style={{color: "white"}}
 							onClick={() => window.location.href=`https://${link.linkURL}`}
 							>
 								{link.text}
@@ -55,14 +58,13 @@ function Footer() {
 						<SocialIcon src={FootData.logoImgURL} />
 					</FooterLogo>
 					<WebsiteRights
-						style={{color: "white"}}
+						style={{color: ColorData.textLight}}
 					>{FootData.copyright}</WebsiteRights>
 					<Row justify="center" gap="2rem" align="center" width="240px">
 						{typeOfDataNeeded.map((social, index) => (
 							<FooterSocialIcon
 								key={index}
 								onClick={() => window.location.href=`https://${social.linkURL}`}
-								style={{color: "white"}}
 							>
 								{social.icon}
 							</FooterSocialIcon>
