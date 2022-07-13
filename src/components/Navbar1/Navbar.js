@@ -25,13 +25,7 @@ const Navbar1 = () => {
 		setShow(!show);
 	};
 
-	const scrollTo = (id) => {
-		const element = document.getElementById(id);
-
-		element.scrollIntoView({
-			behavior: 'smooth',
-		});
-	};
+	
 
 	const closeMobileMenu = (to, id) => {
 	/*	if (id && location.pathname === '/') {

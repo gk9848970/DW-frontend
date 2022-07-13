@@ -11,7 +11,6 @@ import {
 	FormTitle,
 } from './Form.elements';
 import { Container } from '../../globalStyles';
-import validateForm from './Form.validate';
 import { ColorData, FormData } from '../../App2';
 
 const Form = () => {

@@ -15,9 +15,6 @@ import {
 	NavItemBtn,
 	NavLinks,
 	NavBtnLink,
-	Input,
-	Search,
-	SearchWrap,
 	Button
 } from './Navbar.elements';
 
