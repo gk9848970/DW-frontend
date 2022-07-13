@@ -38,7 +38,7 @@ export function App() {
   const [featureType, setFeatureType] = useState(null);
   useEffect(() => {
     axios
-    .post('http://localhost:5500/getAllData',{Domain: 'www.leo.com'})
+    .post('https://speedlabs-server-host.herokuapp.com/getAllData',{Domain: 'www.leo.com'})
     .then(res => {
         console.log(res );
         setNavType(res.data.navbar.navbarType);
