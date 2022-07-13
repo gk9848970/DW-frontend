@@ -21,10 +21,10 @@ const Clients = () => {
 			<Container>
 				<ClientTextWrapper>
 					<ClientTitle
-					style={{color: ColorData.textLight}}
+					style={{color: ColorData.textDark}}
 					>{BrandData.title}</ClientTitle>
 					<ClientText
-					style={{color: ColorData.textLight}}
+					style={{color: ColorData.textDark}}
 					>{BrandData.description}</ClientText>
 				</ClientTextWrapper>
 
