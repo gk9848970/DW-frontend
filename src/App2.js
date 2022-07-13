@@ -38,7 +38,7 @@ export function App() {
   const [featureType, setFeatureType] = useState(null);
   useEffect(() => {
     axios
-    .get('http://localhost:5500/adminPref/1')
+    .post('http://localhost:5500/getAllData',{Domain: 'www.leo.com'})
     .then(res => {
         console.log(res );
         setNavType(res.data.navbar.navbarType);

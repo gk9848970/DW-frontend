@@ -16,7 +16,7 @@ import { ColorData } from '../../App2';
 const Clients = () => {
 	return (
 		<ClientSection id="clients"
-		style={{background: ColorData.tertiaryOne}}
+		style={{background: ColorData.textLight}}
 		>
 			<Container>
 				<ClientTextWrapper>
